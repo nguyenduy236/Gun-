@@ -3,7 +3,6 @@
 gameMap::gameMap(SDL_Renderer* renderer){
        allTileType[WATER] = new tileMap(renderer, "water.png");
        allTileType[SOIL] = new tileMap(renderer, "Soil.png");
-     //  allTileType[STONE] = new tileMap(renderer, "stone.png");
        allTileType[GRASS] = new tileMap(renderer, "Grass.png");
 }
 
