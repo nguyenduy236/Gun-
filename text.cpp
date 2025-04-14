@@ -15,7 +15,7 @@ Text::~Text(){
 void Text::resize(int size){
 
        if(_gFont != NULL){
-              delete _gFont;
+              TTF_CloseFont(_gFont);
               _gFont = NULL;
        }
        if(_current_size == size) return;

@@ -57,8 +57,8 @@ const SDL_Color ENEMY_HP_COLOR = {237, 28, 36, 255}; // RED
 
 enum TILE_TYPE{
        SOIL,
-       WATER,
-       GRASS,
+       STONE,
+       ICE,
        TOTAL_TILE_TYPE
 };
 

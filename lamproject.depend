@@ -1,0 +1,653 @@
+# depslib dependency file v1.0
+1742563287 source:d:\code\project1\lamproject\main.cpp
+	"game.h"
+	"utils.h"
+
+1740012998 d:\code\project1\lamproject\fun.h
+
+1744036409 source:d:\code\project1\lamproject\base_object.cpp
+	"base_object.h"
+
+1744036409 d:\code\project1\lamproject\base_object.h
+	"utils.h"
+	"TextureManager.h"
+
+1744479419 d:\code\project1\lamproject\utils.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<iostream>
+	<string>
+	<vector>
+	<cstdio>
+	<cmath>
+	<cstdlib>
+	<ctime>
+	<sstream>
+	<algorithm>
+	<utility>
+	<queue>
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_guid.h"
+	"SDL_haptic.h"
+	"SDL_hidapi.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"SDL_locale.h"
+	"SDL_misc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"close_code.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_windows.h"
+	"SDL_config_winrt.h"
+	"SDL_config_wingdk.h"
+	"SDL_config_xbox.h"
+	"SDL_config_macosx.h"
+	"SDL_config_iphoneos.h"
+	"SDL_config_android.h"
+	"SDL_config_os2.h"
+	"SDL_config_emscripten.h"
+	"SDL_config_ngage.h"
+	"SDL_config_minimal.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_platform.h
+	<AvailabilityMacros.h>
+	<TargetConditionals.h>
+	<TargetConditionals.h>
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\begin_code.h
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\close_code.h
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_windows.h
+	"SDL_platform.h"
+	<winsdkver.h>
+	<sdkddkver.h>
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_winrt.h
+	"SDL_platform.h"
+	<sdkddkver.h>
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_wingdk.h
+	"SDL_platform.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_xbox.h
+	"SDL_platform.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_macosx.h
+	"SDL_platform.h"
+	<AvailabilityMacros.h>
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_iphoneos.h
+	"SDL_platform.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_android.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_os2.h
+	"SDL_platform.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_emscripten.h
+	"SDL_platform.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_ngage.h
+	"SDL_platform.h"
+
+1735721324 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_config_minimal.h
+	"SDL_platform.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_assert.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<endian.h>
+	<endian.h>
+	<sys/endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<arm_neon.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<lsxintrin.h>
+	<lasxintrin.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_guid.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_guid.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_hidapi.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_locale.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1738429358 d:\code\sdl2\86xsdl\mixer\include\sdl2\sdl_misc.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1740866480 d:\code\sdl2\86xsdl\image\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1705848875 d:\code\sdl2\86xsdl\ttf\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1675731449 d:\code\sdl2\86xsdl\image\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1744040259 d:\code\project1\lamproject\texturemanager.h
+	"utils.h"
+
+1742563288 source:d:\code\project1\lamproject\bullet_object.cpp
+	"base_object.h"
+
+1744479419 source:d:\code\project1\lamproject\game_map.cpp
+	"game_map.h"
+
+1744132648 d:\code\project1\lamproject\game_map.h
+	"utils.h"
+	"base_object.h"
+
+1744116096 source:d:\code\project1\lamproject\button.cpp
+	"button.h"
+
+1744116096 d:\code\project1\lamproject\button.h
+	"utils.h"
+	"base_object.h"
+	"cursor.h"
+
+1744116096 d:\code\project1\lamproject\cursor.h
+	"utils.h"
+	"base_object.h"
+
+1744379115 source:d:\code\project1\lamproject\cursor.cpp
+	"cursor.h"
+
+1744615637 source:d:\code\project1\lamproject\game.cpp
+	"utils.h"
+	"game.h"
+
+1744040258 source:d:\code\project1\lamproject\texturemanager.cpp
+	"TextureManager.h"
+
+1743752881 source:d:\code\project1\lamproject\utils.cpp
+	"utils.h"
+
+1744115934 source:d:\code\project1\lamproject\explosion.cpp
+	"explosion.h"
+
+1742797240 d:\code\project1\lamproject\explosion.h
+	"utils.h"
+	"base_object.h"
+	"game_map.h"
+
+1742797239 source:d:\code\project1\lamproject\gate.cpp
+	"gate.h"
+
+1744132648 d:\code\project1\lamproject\gate.h
+	"utils.h"
+	"base_object.h"
+	"game_map.h"
+
+1744477344 source:d:\code\project1\lamproject\enemy_tank.cpp
+	"enemy_tank.h"
+
+1744477633 d:\code\project1\lamproject\enemy_tank.h
+	"utils.h"
+	"bulletObject.h"
+	"gun_tank.h"
+	"timers.h"
+
+1742798694 d:\code\project1\lamproject\bullet_object.h
+	"utils.h"
+	"game_map.h"
+	"base_object.h"
+
+1742797371 d:\code\project1\lamproject\gun_tank.h
+	"utils.h"
+	"base_object.h"
+
+1744115813 d:\code\project1\lamproject\timers.h
+	"utils.h"
+
+1743754461 source:d:\code\project1\lamproject\gun_tank.cpp
+	"gun_tank.h"
+
+1744477344 source:d:\code\project1\lamproject\main_tank.cpp
+	"main_tank.h"
+
+1744477608 d:\code\project1\lamproject\main_tank.h
+	"utils.h"
+	"game_map.h"
+	"base_object.h"
+	"bulletObject.h"
+	"gun_tank.h"
+	"cursor.h"
+
+1742797239 source:d:\code\project1\lamproject\skill.cpp
+	"Skill.h"
+
+1742797239 d:\code\project1\lamproject\skill.h
+	"utils.h"
+	"base_object.h"
+	"timers.h"
+
+1744615107 source:d:\code\project1\lamproject\text.cpp
+	"text.h"
+
+1744031938 d:\code\project1\lamproject\text.h
+	"utils.h"
+	"base_object.h"
+
+1743180743 source:d:\code\project1\lamproject\timers.cpp
+	"timers.h"
+
+1744422380 d:\code\project1\lamproject\game.h
+	"utils.h"
+	"main_tank.h"
+	"game_map.h"
+	"enemy_tank.h"
+	"menu.h"
+	"cursor.h"
+	"text.h"
+	"Gate.h"
+	"timers.h"
+
+1744614706 d:\code\project1\lamproject\menu.h
+	"utils.h"
+	"base_object.h"
+	"button.h"
+	"text.h"
+
+1744614724 source:d:\code\project1\lamproject\menu.cpp
+	"menu.h"
+
+1742798136 d:\code\project1\lamproject\skill_e.h
+	"utils.h"
+	"Skill.h"
+	"E_Rocket.h"
+
+1742798137 d:\code\project1\lamproject\e_rocket.h
+	"utils.h"
+	"base_object.h"
+	"game_map.h"
+
+1742798137 source:d:\code\project1\lamproject\e_rocket.cpp
+	"E_Rocket.h"
+	"enemy_tank.h"
+
+1742797987 source:d:\code\project1\lamproject\skill_e.cpp
+	"Skill_E.h"
+	"game.h"
+
+1742798284 source:d:\code\project1\lamproject\hp_buff.cpp
+	"HP_buff.h"
+
+1742798284 d:\code\project1\lamproject\hp_buff.h
+	"utils.h"
+	"base_object.h"
+	"game_map.h"
+
+1744027579 d:\code\project1\lamproject\bulletobject.h
+	"utils.h"
+	"game_map.h"
+	"base_object.h"
+
+1743755905 source:d:\code\project1\lamproject\bulletobject.cpp
+	"bulletObject.h"
+

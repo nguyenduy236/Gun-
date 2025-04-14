@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lamproject" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/lamproject" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../SDL2/86xSDL/image/include/SDL2" />
+					<Add directory="../../SDL2/86xSDL/mixer/include/SDL2" />
+					<Add directory="../../SDL2/86xSDL/sdl/include/SDL2" />
+					<Add directory="../../SDL2/86xSDL/ttf/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2  -lSDL2_image  -lSDL2_mixer -lSDL2_ttf" />
+					<Add directory="../../SDL2/86xSDL/image/lib" />
+					<Add directory="../../SDL2/86xSDL/mixer/lib" />
+					<Add directory="../../SDL2/86xSDL/sdl/lib" />
+					<Add directory="../../SDL2/86xSDL/ttf/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/lamproject" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="TextureManager.cpp" />
+		<Unit filename="TextureManager.h" />
+		<Unit filename="base_object.cpp" />
+		<Unit filename="base_object.h" />
+		<Unit filename="bulletObject.cpp" />
+		<Unit filename="bulletObject.h" />
+		<Unit filename="button.cpp" />
+		<Unit filename="button.h" />
+		<Unit filename="cursor.cpp" />
+		<Unit filename="cursor.h" />
+		<Unit filename="enemy_tank.cpp" />
+		<Unit filename="enemy_tank.h" />
+		<Unit filename="explosion.h" />
+		<Unit filename="game.cpp" />
+		<Unit filename="game.h" />
+		<Unit filename="game_map.cpp" />
+		<Unit filename="game_map.h" />
+		<Unit filename="gate.cpp" />
+		<Unit filename="gate.h" />
+		<Unit filename="gun_tank.cpp" />
+		<Unit filename="gun_tank.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main_tank.cpp" />
+		<Unit filename="main_tank.h" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
+		<Unit filename="text.cpp" />
+		<Unit filename="text.h" />
+		<Unit filename="timers.cpp" />
+		<Unit filename="timers.h" />
+		<Unit filename="utils.cpp" />
+		<Unit filename="utils.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

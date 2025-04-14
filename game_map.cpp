@@ -1,9 +1,9 @@
 #include "game_map.h"
 
 gameMap::gameMap(SDL_Renderer* renderer){
-       allTileType[WATER] = new tileMap(renderer, "water.png");
+       allTileType[ICE] = new tileMap(renderer, "ice.png");
        allTileType[SOIL] = new tileMap(renderer, "Soil.png");
-       allTileType[GRASS] = new tileMap(renderer, "Grass.png");
+       allTileType[STONE] = new tileMap(renderer, "stone.png");
 }
 
 gameMap::~gameMap(){
@@ -33,7 +33,7 @@ void gameMap::dfs_generate_random_maze(int y, int x){
               if(next_y < 0 || next_y > MAX_MAP_Y) continue;
               if(_game_map.tile[next_y][next_x] == SOIL) continue;
 
-              if(_game_map.tile[next_y][next_x] == GRASS){
+              if(_game_map.tile[next_y][next_x] == STONE){
                      bool check_valid_cell = true;
                      for(int j : direct_order){
                             int beside_next_y = next_y + directionY[j],
@@ -66,12 +66,12 @@ void gameMap::loadTileMap(){
 
        for(int i = 0; i < MAX_MAP_Y; i ++){
               for(int j = 0; j < MAX_MAP_X; j ++){
-                   _game_map.tile[i][j] = GRASS;
+                   _game_map.tile[i][j] = STONE;
               }
        }
 
-       for(int j = 0; j < MAX_MAP_X; j ++) _game_map.tile[0][j] = _game_map.tile[MAX_MAP_Y - 1][j] = WATER;
-       for(int i = 0; i < MAX_MAP_Y; i ++) _game_map.tile[i][0] = _game_map.tile[i][MAX_MAP_X - 1] = WATER;
+       for(int j = 0; j < MAX_MAP_X; j ++) _game_map.tile[0][j] = _game_map.tile[MAX_MAP_Y - 1][j] = ICE;
+       for(int i = 0; i < MAX_MAP_Y; i ++) _game_map.tile[i][0] = _game_map.tile[i][MAX_MAP_X - 1] = ICE;
 
        dfs_generate_random_maze(1, 1);
 
@@ -102,7 +102,7 @@ void gameMap::draw(SDL_Renderer* renderer){
               for(int j = leftBound; j <= rightBound; j ++){
                      int val = getTileType(j, i);
 
-                     if(val == GRASS){
+                     if(val == STONE){
                             allTileType[SOIL]->setRect(j * TILE_SIZE - _game_map._current_x, i * TILE_SIZE - _game_map._current_y);
                             allTileType[SOIL]->render(renderer);
 
