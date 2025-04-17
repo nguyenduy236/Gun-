@@ -23,7 +23,7 @@ public:
        void move();
        void move_back();
        void siteCamera(gameMap* Camera); // camera di chuyen theo nhan vat
-       bool checkValidPos(gameMap *Map) const {return true;}
+       bool checkValidPos(gameMap *Map) const;
        void handleBullet(SDL_Renderer* renderer, gameMap* Map);
        void updateBox() {_hit_box.x = _x_in_level + 4, _hit_box.y = _y_in_level + 4;}
        SDL_Rect getBox() const {return _hit_box;}

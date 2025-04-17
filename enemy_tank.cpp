@@ -70,6 +70,34 @@ void enemyTank::draw(SDL_Renderer* renderer, gameMap* camera, const int& main_ta
        renderHPBar(renderer, getRect().x, getRect().y + TILE_SIZE + 5, HP_WIDTH, HP_HEIGHT, ENEMY_HP_COLOR);
 
 }
+bool enemyTank::checkValidPos(gameMap *Map) const{
+   if(_x_in_level < 0 || _x_in_level + TANK_SIZE > LEVEL_WIDTH) return false;
+   if(_y_in_level < 0 || _y_in_level + TANK_SIZE > LEVEL_HEIGHT) return false;
+
+   int _x_in_tileMap = 0, _y_in_tileMap = 0;
+
+   //check trái trên
+   _x_in_tileMap = getBox().x/TILE_SIZE;
+   _y_in_tileMap = getBox().y/TILE_SIZE;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+   // check trai duoi
+   _x_in_tileMap = getBox().x/TILE_SIZE;
+   _y_in_tileMap = ((getBox().y + getBox().h-1))/TILE_SIZE ;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+   // check phải trên
+   _x_in_tileMap = (getBox().x + getBox().w - 1)/TILE_SIZE;
+   _y_in_tileMap = getBox().y/TILE_SIZE;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+   // check dưới phải
+    _x_in_tileMap = (getBox().x + getBox().w - 1)/TILE_SIZE;
+   _y_in_tileMap = (getBox().y + getBox().h - 1)/TILE_SIZE;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+    return true;
+}
 
 void enemyTank::handleShot(SDL_Renderer* renderer, const int& pos_x, const int &pos_y){
        double distance = sqrt((pos_x - _x_in_level) * (pos_x - _x_in_level) + (pos_y - _y_in_level) * (pos_y - _y_in_level));

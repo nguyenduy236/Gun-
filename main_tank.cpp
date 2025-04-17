@@ -125,6 +125,34 @@ void mainTank::handleKeyState(){
 
 
 }
+bool mainTank::checkValidPos(gameMap *Map) const{
+   if(_x_in_level < 0 || _x_in_level + TANK_SIZE > LEVEL_WIDTH) return false;
+   if(_y_in_level < 0 || _y_in_level + TANK_SIZE > LEVEL_HEIGHT) return false;
+
+   int _x_in_tileMap = 0, _y_in_tileMap = 0;
+
+   //check trái trên
+   _x_in_tileMap = getBox().x/TILE_SIZE;
+   _y_in_tileMap = getBox().y/TILE_SIZE;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+   // check trai duoi
+   _x_in_tileMap = getBox().x/TILE_SIZE;
+   _y_in_tileMap = ((getBox().y + getBox().h-1))/TILE_SIZE ;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+   // check phải trên
+   _x_in_tileMap = (getBox().x + getBox().w - 1)/TILE_SIZE;
+   _y_in_tileMap = getBox().y/TILE_SIZE;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+   // check dưới phải
+    _x_in_tileMap = (getBox().x + getBox().w - 1)/TILE_SIZE;
+   _y_in_tileMap = (getBox().y + getBox().h - 1)/TILE_SIZE;
+   if(Map->getTileType(_x_in_tileMap, _y_in_tileMap) == STONE || Map->getTileType(_x_in_tileMap, _y_in_tileMap) == ICE) return false;
+
+    return true;
+}
 
 void mainTank::handleBullet(SDL_Renderer* renderer, gameMap* Map){
        std::vector<bulletObject*> new_bullet_list;

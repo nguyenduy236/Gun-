@@ -17,7 +17,7 @@ public:
        void draw(SDL_Renderer *renderer, gameMap *camera, const int &main_tank_x, const int &main_tank_y);
        void move();
        void move_back();
-       bool checkValidPos(gameMap *Map) const {return true;}
+       bool checkValidPos(gameMap *Map) const;
        void handleShot(SDL_Renderer* renderer, const int &pos_x, const int &pos_y);
        void findPath(int** shortest_path); // trace main Tank
        void handleBullet(SDL_Renderer* renderer, gameMap* Map);
