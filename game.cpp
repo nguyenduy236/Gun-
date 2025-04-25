@@ -154,6 +154,65 @@ void game::handleUserInput(SDL_Event e){
 
 }
 
+void game::handleBulletCollision(){
+
+       std::vector<bulletObject*> main_bullet = _mTank->getBulletList();
+       std::vector<bulletObject*> new_main_bullet;
+
+       for(bulletObject* m_bullet : main_bullet){
+
+              bool check = false;
+
+              for(enemyTank* e_tank : _enemy_tank_list){
+                     if(CommonFunction::checkCollision(m_bullet->getBox(), e_tank->getBox())){
+
+                            e_tank->changeHealth(-m_bullet->getDamage());
+                            e_tank->resetFlicker();
+
+                            _score ++;
+
+                            if(m_bullet != NULL){
+                                   delete m_bullet;
+                                   m_bullet = NULL;
+                            }
+
+                            check = true;
+                            break;
+                     }
+                            }
+              if(!check) new_main_bullet.push_back(m_bullet);
+
+       }
+       _mTank->setBulletList(new_main_bullet);
+
+
+       for(enemyTank* e_tank : _enemy_tank_list){
+
+              std::vector<bulletObject*> enemy_bullet = e_tank->getBulletList();
+              std::vector<bulletObject*> new_enemy_bullet;
+
+              for(bulletObject* e_bullet : enemy_bullet){
+
+                     if(CommonFunction::checkCollision(e_bullet->getBox(), _mTank->getBox())){
+
+                            _mTank->changeHealth(-e_bullet->getDamage());
+                            _mTank->resetFlicker();
+                            if(e_bullet != NULL){
+                                   delete e_bullet;
+                                   e_bullet = NULL;
+                            }
+
+                     }
+                     else new_enemy_bullet.push_back(e_bullet);
+
+              }
+              e_tank->setBulletList(new_enemy_bullet);
+
+       }
+
+}
+
+
 void game::update(){
 
        handleMusic();
@@ -171,9 +230,10 @@ void game::update(){
               }
 
               handleTankMoving();
-          //    handleBulletCollision();
+              handleBulletCollision();
               _mTank->siteCamera(_map);
               handleLiving();
+              handleNextLevel();
               handleEnemyNumber();
        }
        else{
@@ -277,14 +337,11 @@ void game::handleTankMoving(){
 
 
 void game::handleEndGame(){
-       _highest_score = std::max(_highest_score, _score);
 
-       std::stringstream finalScore, highestScore;
+       std::stringstream finalScore;
        finalScore << "Your score: " << _score;
-       highestScore << "Highest score: " << _highest_score;
 
        _menu->setFinalScore(gRenderer, finalScore.str());
-       _menu->setHighestScore(gRenderer, highestScore.str());
 
        _menu->setAlphaMod(0);
        setStatus(GAME_OVER);
@@ -317,6 +374,40 @@ void game::handleLiving(){
 
 }
 
+void game::handleNextLevel(){
+   if(CommonFunction::checkCollision(_mTank->getBox(), _gate->getBox())) {
+         handleGoToNextMap();
+}
+}
+
+void game::handleGoToNextMap(){
+    int temp_main_hp = _mTank->getHealth();
+
+       freeGameObject();
+
+       _map = new gameMap(gRenderer);
+       if(_map == NULL) CommonFunction::logSDLError(std::cout, "Load Map", true);
+
+       _gate = new Gate ( gRenderer, "gate.png");
+       _gate->setBox( TILE_SIZE * ( MAX_MAP_X - 2 ) + 32 , TILE_SIZE * (MAX_MAP_Y - 2) + 32, 32, 32);
+
+       _score += 100;
+
+       loadMap();
+
+       _mTank = new mainTank (300, temp_main_hp + 100, 64, 64, gRenderer);
+       MAX_ENEMY_HP += 20;
+
+       if(_mTank == NULL) CommonFunction::logSDLError(std::cout, "Load main tank", true);
+
+       for(int _ = ENEMY_NUMBER; _ ; _ --){
+              generateEnemyTank();
+       }
+
+       _timer_enemy_appear = new LTimer ();
+       if(_timer_enemy_appear == NULL) CommonFunction::logSDLError(std::cout, "Load timer enemy appear", true);
+       _timer_enemy_appear->start();
+}
 
 void game::handleMusic(){
 

@@ -27,6 +27,8 @@ public:
        void handleTankMoving();
        void handleBulletCollision();
        void handleLiving();
+       void handleNextLevel();
+       void handleGoToNextMap();
        void startGame();
        void handleMusic();
        void handleMouse();
@@ -44,7 +46,7 @@ private:
        SDL_Renderer* gRenderer;
        Mix_Music* gMusic;
 
-       int _score, _highest_score;
+       int _score;
        gameStatus _status;
        mainTank *_mTank;
        gameMap *_map;

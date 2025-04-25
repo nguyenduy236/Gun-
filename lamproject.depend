@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1742563287 source:d:\code\project1\lamproject\main.cpp
+1745566161 source:d:\code\project1\lamproject\main.cpp
 	"game.h"
 	"utils.h"
 
@@ -518,7 +518,7 @@
 1744379115 source:d:\code\project1\lamproject\cursor.cpp
 	"cursor.h"
 
-1744615637 source:d:\code\project1\lamproject\game.cpp
+1745551247 source:d:\code\project1\lamproject\game.cpp
 	"utils.h"
 	"game.h"
 
@@ -536,7 +536,7 @@
 	"base_object.h"
 	"game_map.h"
 
-1742797239 source:d:\code\project1\lamproject\gate.cpp
+1745551247 source:d:\code\project1\lamproject\gate.cpp
 	"gate.h"
 
 1744132648 d:\code\project1\lamproject\gate.h
@@ -597,7 +597,7 @@
 1743180743 source:d:\code\project1\lamproject\timers.cpp
 	"timers.h"
 
-1744422380 d:\code\project1\lamproject\game.h
+1745551046 d:\code\project1\lamproject\game.h
 	"utils.h"
 	"main_tank.h"
 	"game_map.h"
