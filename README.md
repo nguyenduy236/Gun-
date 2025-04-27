@@ -1,6 +1,6 @@
 # GUN
 ## Giới thiệu:
-- Demo:
+- Demo: https://drive.google.com/drive/folders/1e9nIcvgoRKBihgmVr0ysF5SpdZgnvuWn?hl=vi
 - Người chơi sẽ điều khiển tank từ góc trái trên của bản đồ và cố gắng đi tới cổng dịch chuyển ở góc trái dưới bản đồ.
 - Trong quá trình di chuyển người chơi phải tiêu diệt các kẻ địch để nhận điểm số.
 - Khi tới cổng dịch chuyển, người chơi sẽ được dịch chuyển sang 1 bản đồ mới.
